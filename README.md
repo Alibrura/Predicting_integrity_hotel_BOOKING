@@ -112,11 +112,11 @@
 | RandomForestRegressor (Optuna) | **0.118** |
 
 ### Важность признаков (топ-5 по версии Random Forest):
-1. `average_score`
-2. `negative_review_compound`
-3. `positive_review_compound`
-4. `total_number_of_reviews`
-5. `deviation_from_hotel_median_sentiment`
+1. `new_score`
+2. `weighted_sentiment`
+3. `mean_positive_review_season_scale`
+4. `mean_positive_review_year_scale`
+5. `deviation_positive_review_scale`
 
 ---
 
@@ -155,9 +155,15 @@ GitHub: Alibrura
 
 ## 📄 Лицензия
 
-Проект выполнен в учебных целях и распространяется под лицензией MIT. Данные предоставлены в рамках соревнования на Kaggle ([SF-DST] Booking reviews).
+Проект выполнен в учебных целях и распространяется под лицензией MIT. Данные предоставлены в рамках соревнования на Kaggle (["[SF-DST] Booking reviews (kaggle.com)"](https://www.kaggle.com/competitions/sf-booking)).
 
 ---
+
+# Будущие исправления 
+- создать в .md итоговую таблицу признаков до отбора 
+- использовать другие алгоритмы ML
+- использовать другие методы обработки NLP
+- выложить на kaggle
 
 **Более подробно с расчётами и визуализациями можно ознакомиться в Jupyter Notebook:**  
 [EDA_Project_3_model.ipynb](EDA_Project_3_model.ipynb)
